@@ -422,8 +422,8 @@
         <p class="subsc-text">Subscribe</p>
         <form class="subsc-form">
           <label class="subsc-label" for="subsc-input">
-            <input type="email" id="subsc-input" class="subsc-input" placeholder="E-mail"></label>
-          <button class="subs-btn" type="submit">Subscribe <svg  width="24" height="24">
+            <input name="subsc-input"  type="email" id="subsc-input" class="subsc-input" placeholder="E-mail"></label>
+          <button class="subs-btn" type="submit">Subscribe <svg class="subs-icon" width="24" height="24">
             <use href="./images/icons.svg#plane"></use>
           </svg></button>
         </form>
@@ -443,10 +443,10 @@
     <p class="modal-text">Leave your contacts and we will call you back</p>
     <form class="modal-form"> 
       <div class="modal-container-block">
-        <label class="modal-form-label" for="user-text">Name</label>
+        <label class="modal-form-label" for="user-name">Name</label>
           <div class="modal-form-input-cont">
-            <input type="text" class="modal-form-input" name="user-text" required id="user-text"> 
-              <svg class="modal-form-icon" width="18" height="18">
+            <input type="text" class="modal-form-input" name="user-name" required id="user-name"> 
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#person"></use>
               </svg>
           </div>
@@ -457,7 +457,7 @@
         <label class="modal-form-label" for="user-phone">Phone</label>
           <div class="modal-form-input-cont">
             <input type="tel" class="modal-form-input" name="user-phone" required id="user-phone"> 
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
           </div>
@@ -470,7 +470,7 @@
         <label class="modal-form-label" for="user-email">Email</label>
           <div class="modal-form-input-cont">
             <input type="email" class="modal-form-input" name="user-email" required id="user-email"> 
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#email"></use>
               </svg>
           </div>
@@ -478,19 +478,19 @@
 
 
       <div class="cont-user-text-area">
-        <label for="user-coment" class="modal-form-label">Comment</label>
-        <textarea name="user-coment" id="user-coment" class="user-coment" placeholder="Enter text"></textarea>
+        <label for="user-comment" class="modal-form-label">Comment</label>
+        <textarea name="user-comment"placeholder="Text input" id="user-comment" class="user-coment" ></textarea>
       </div>
 
 
 
       <div class="modal-form-con-chekbox">
-        <input type="checkbox" id="user-checkbox" class="checkbox visually-hidden">
-        <label class="label-checkbox" for="user-checkbox"><span class="custom-checkbox">
+        <input type="checkbox" value="true"  name="user-privacy" id="user-privacy" class="checkbox visually-hidden">
+        <label class="label-checkbox"  for="user-privacy"><span class="custom-checkbox">
           <svg  width="10" height="8">
             <use href="./images/icons.svg#check"></use>
           </svg>
-        </span>I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+        </span>I accept the terms and conditions of the <a class="checkbox-link" href="">Privacy Policy</a></label>
       </div>
 
 
