@@ -562,7 +562,7 @@ padding: 8px 24px;
 width: 165px;
 height: 40px;
 background: #4d5ae5;
-margin-left: 24px;
+
 
 font-weight: 500;
 font-size: 16px;
@@ -577,7 +577,8 @@ color: #fff;
     background-color: #31d0aa;
 }
 .subsc-form {
-    display: inline-flex;
+    display: flex;
+    gap: 24px;
 }
 .subsc-label {
 }
